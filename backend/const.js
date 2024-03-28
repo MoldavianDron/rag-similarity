@@ -1,0 +1,1 @@
+export const JQL = "project in (Whiteboards) order by created DESC"
