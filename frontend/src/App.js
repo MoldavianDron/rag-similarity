@@ -174,12 +174,12 @@ function Progress({ initLoading, issuesToDownload }) {
           }
           countExecute()
         }
-      }, 1000); // Execute every second
+      }, 3000);
     }
     return () => clearInterval(id);
   }, [initLoading, countExecute, countLoading, countResult?.result]);
 
-  return (initLoading && issuesToDownload && <p>{`Downloading issues and populating database: ${issuesProcessed}/${issuesToDownload}`}</p>);
+  return (initLoading && issuesToDownload && <p style={{fontSize: 14}}>{`Downloading issues and populating database: ${issuesProcessed}/${issuesToDownload}`}</p>);
 }
 
 function App() {

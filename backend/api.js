@@ -5,7 +5,7 @@ const JiraAPICall = async (endpoint, options) => {
         headers: {
             'Content-Type': 'application/json',
             'Authorization': `Basic ${Buffer.from(
-                `andrei.zaporojan@appfire.com:${process.env.API_TOKEN}`
+                `andrei.zaporojan@appfire.com:${process.env.JIRA_API_TOKEN}`
             ).toString('base64')}`,
             'X-Force-Accept-Language': 'true',
             'Accept-Language': 'pl'
